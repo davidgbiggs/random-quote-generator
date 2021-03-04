@@ -1,2 +1,2 @@
 # random-quote-generator
-FreeCodeCamp Responsive Web Design Certification Project 5
+FreeCodeCamp Front End Libraries Certification Project 1
