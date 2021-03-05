@@ -1,7 +1,10 @@
 import * as _ from "lodash";
+import * as $ from "jquery";
 
 function component(): HTMLDivElement {
   const element = document.createElement("div");
+
+  element.classList.add("hi");
 
   element.innerHTML = _.join(["Hello", "webpack"], " ");
 
@@ -9,3 +12,4 @@ function component(): HTMLDivElement {
 }
 
 document.body.appendChild(component());
+$(".hi").css("color", "blue");
