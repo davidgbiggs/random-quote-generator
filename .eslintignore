@@ -6,3 +6,4 @@ dist
 coverage
 # don't lint webpack config
 webpack.config.js
+.eslintrc.json
