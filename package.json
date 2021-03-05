@@ -1,10 +1,11 @@
 {
   "name": "random-quote-generator",
   "version": "1.0.0",
-  "description": "A random quote generator single page application built with webpack, jquery, sass, html, and TypeScript.",
-  "main": "index.js",
+  "description": "A random quote generator single page application built with Webpack, jquery, Sass, Html, and TypeScript.",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,18 @@
   "bugs": {
     "url": "https://github.com/davidgbiggs/random-quote-generator/issues"
   },
-  "homepage": "https://github.com/davidgbiggs/random-quote-generator#readme"
+  "homepage": "https://github.com/davidgbiggs/random-quote-generator#readme",
+  "devDependencies": {
+    "@types/lodash": "^4.14.168",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "eslint": "^7.21.0",
+    "eslint-plugin-import": "^2.22.1",
+    "ts-loader": "^8.0.17",
+    "typescript": "^4.2.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
