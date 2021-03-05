@@ -1,6 +1,7 @@
 import * as _ from "lodash";
 import * as $ from "jquery";
 import "./style.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function component(): HTMLDivElement {
   const element = document.createElement("div");

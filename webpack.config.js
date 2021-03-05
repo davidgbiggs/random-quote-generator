@@ -21,10 +21,21 @@ module.exports = {
           "sass-loader",
         ],
       },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
     ],
   },
+  devServer: {
+    contentBase: "./dist",
+  },
+  mode: "development",
   resolve: {
-    extensions: [".ts"],
+    extensions: [".wasm", ".mjs", ".js", ".jsx", ".ts", ".tsx", ".json"],
+    alias: {
+      "@": path.resolve("src"),
+    },
   },
   output: {
     filename: "bundle.js",

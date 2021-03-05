@@ -1,11 +1,12 @@
 {
   "name": "random-quote-generator",
   "version": "1.0.0",
-  "description": "A random quote generator single page application built with Webpack, jquery, Sass, Html, and TypeScript.",
+  "description": "A random quote generator single page application built with Webpack, jquery, Sass, Bootstrap, and TypeScript.",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "start": "webpack serve --open"
   },
   "repository": {
     "type": "git",
@@ -31,9 +32,11 @@
     "ts-loader": "^8.0.17",
     "typescript": "^4.2.2",
     "webpack": "^5.24.3",
-    "webpack-cli": "^4.5.0"
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "bootstrap": "^4.6.0",
     "jquery": "^3.6.0",
     "lodash": "^4.17.21"
   }
