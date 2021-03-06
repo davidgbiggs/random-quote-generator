@@ -1,5 +1,39 @@
-$body-color: red;
+@import "bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+$animation-duration: 1.5s;
 
 body {
-  background-color: $body-color;
+  height: 100vh;
+  font-family: "Varela Round", sans-serif;
+}
+
+#text {
+  font-size: 28px;
+}
+
+#quote-box {
+  border-radius: 10px;
+  max-width: 600px;
+  min-width: 400px;
+}
+
+#new-quote {
+  font-size: 12px;
+}
+
+#credits-container {
+  font-size: 12px;
+}
+
+.share-btn {
+  width: 38px;
+}
+
+.change-bg {
+  transition: background $animation-duration;
+}
+
+.change-text {
+  transition: color ($animation-duration / 2);
 }

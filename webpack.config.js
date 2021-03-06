@@ -22,8 +22,20 @@ module.exports = {
         ],
       },
       {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "fonts/",
+            },
+          },
+        ],
+      },
+      {
+        test: /\.html$/i,
+        use: ["html-loader"],
       },
     ],
   },
@@ -31,14 +43,9 @@ module.exports = {
     contentBase: "./dist",
   },
   mode: "development",
-  resolve: {
-    extensions: [".wasm", ".mjs", ".js", ".jsx", ".ts", ".tsx", ".json"],
-    alias: {
-      "@": path.resolve("src"),
-    },
-  },
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
+    clean: true,
   },
 };
