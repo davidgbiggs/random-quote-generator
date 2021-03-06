@@ -35,14 +35,16 @@ module.exports = {
       },
       {
         test: /\.html$/i,
-        use: ["html-loader"],
+        loader: "file-loader",
+        options: {
+          name: "index.html",
+        },
       },
     ],
   },
   devServer: {
     contentBase: "./dist",
   },
-  mode: "development",
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),

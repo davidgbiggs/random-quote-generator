@@ -1,5 +1,6 @@
 import * as $ from "jquery";
 import "./style.scss";
+import "./index.html";
 import "@fortawesome/fontawesome-free/js/fontawesome";
 import "@fortawesome/fontawesome-free/js/solid";
 import "@fortawesome/fontawesome-free/js/regular";
